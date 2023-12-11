@@ -1,8 +1,46 @@
 body{
-    background-color: teal;
+    background-color:black;
 }
 
-header {
-    background-color: whitesmoke;
-    padding: 10px 0px 10px 0px;  
+h1 {
+    font-family:monospace;
+    font-size: 60px;
+    text-align: center;
+    color: darkolivegreen;
+}
+
+.flexgrow-container {
+    display: flex;
+}
+
+.box1 {
+    background-color: darkolivegreen;
+    font-weight: 900;
+    font-size: 30px;
+    font-family:monospace;
+    text-align: center;
+    height: 500px;
+    flex: 1 1 auto;
+}
+
+.box2 {
+
+    background-color: darkolivegreen;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-family:monospace;
+    height: 500px;
+    flex: 1 1 auto;
+}
+
+.box3 {
+
+    background-color: darkolivegreen;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+    font-family:monospace;
+    height: 500px;
+    flex: 1 1 auto;
 }
