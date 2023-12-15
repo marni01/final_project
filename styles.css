@@ -7,6 +7,7 @@ h1 {
     font-size: 60px;
     text-align: center;
     color: darkolivegreen;
+    padding: 35px;
 }
 
 .flexgrow-container {
@@ -55,4 +56,28 @@ h1 {
 img {
     width: 80%;
     object-fit:contain;
+}
+
+button {
+    border: 1px solid black;
+
+    border-radius: 5px;
+    background-color: black;
+    color: cornsilk;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    margin: 12px;
+    transition-duration: .4s;
+}
+
+button:hover{
+    background-color: cornsilk;
+    color: darkolivegreen;
+}
+
+button:active{
+    background-color: black;
+    box-shadow: 0 2px cornsilk;
+    transform: translateY(1px);
 }
