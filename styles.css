@@ -13,6 +13,12 @@ h1 {
     display: flex;
 }
 
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
 .box1 {
     background-color: darkolivegreen;
     font-weight: 900;
