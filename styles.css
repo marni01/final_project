@@ -10,6 +10,14 @@ h1 {
     padding: 35px;
 }
 
+p{
+  font-family:monospace;
+  font-size: 50px;
+  text-align: center;
+  color: cornsilk;
+  padding: 15px;
+}
+
 .CARP-project{
   display: flex;
 }
@@ -89,6 +97,23 @@ h1 {
     /* typography */
 .typography-systems{
   display: flex-wrap;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
 }
 
 .slides1 :target {
