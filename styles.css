@@ -10,6 +10,10 @@ h1 {
     padding: 35px;
 }
 
+.CARP-project{
+  display: flex;
+}
+
 .slides :target {
   transform:  scale(1.1);
 }
@@ -51,8 +55,6 @@ h1 {
     align-items: center;
   }
 
-
-
   .slider > a {
     display: inline-flex;
     width: 5rem;
@@ -78,16 +80,46 @@ h1 {
   background-color: black;
 }
   
-  /* Don't need button navigation */
   @supports (scroll-snap-type) {
     .slider > a {
-      display: none;
+      display: flex;
     }
   }
 
-
+    /* typography */
 .typography-systems{
+  display: flex-wrap;
+}
+
+.slides1 :target {
+  transform:  scale(1.1);
+}
+
+.slides1 {
+  align-items: center;
   display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides1 > div {
+  display:flex;
+  border: 3px solid darkolivegreen;
+  scroll-snap-align: start;
+  width: fit-content;
+  height: 250px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  background: cornsilk;
+  transform-origin: center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
   .slider2 {
@@ -95,41 +127,16 @@ h1 {
     align-items: center;
   }
 
-  .slides {
-    align-items: center;
+  .slide-image1{
     display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .slide-image{
     align-items: center;
-    height: 450px;
+    height: 250px;
     width: fit-content;
-  }
-
-  .slides > div {
-    display: inline-flex;
-    border: 3px solid darkolivegreen;
-    scroll-snap-align: start;
-    width: fit-content;
-    height: 450px;
-    margin-right: 110px;
-    margin-left: 50px;
-    border-radius: 10px;
-    background: cornsilk;
-    transform-origin: center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
-    justify-content: center;
-    align-items: center;
   }
 
   .slider2 > a {
     display: inline-flex;
-    width: 5rem;
+    width: 6.3rem;
     height: 4rem;
     background: darkolivegreen;
     color: cornsilk;
@@ -137,7 +144,7 @@ h1 {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    margin: 0 0 2.5rem 0;
+    margin: 1rem 1rem 2.5rem 0;
     box-shadow: 1px cornsilk;
     position:center;
     font-family: monospace;
@@ -152,9 +159,8 @@ h1 {
   background-color: black;
 }
   
-  /* Don't need button navigation */
   @supports (scroll-snap-type) {
-    .slider > a {
+    .slider2 > a {
       display: none;
     }
   }
@@ -226,7 +232,6 @@ img {
 
 button {
     border: 1px solid black;
-
     border-radius: 5px;
     background-color: black;
     color: cornsilk;
