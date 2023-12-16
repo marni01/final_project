@@ -10,7 +10,173 @@ h1 {
     padding: 35px;
 }
 
-.flexgrow-container {
+.slides :target {
+  transform:  scale(1.1);
+}
+
+  .slider {
+    text-align: center;
+    align-items: center;
+  }
+
+  .slides {
+    align-items: center;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slide-image{
+    align-items: center;
+    height: 450px;
+    width: fit-content;
+  }
+
+  .slides > div {
+    display: inline-flex;
+    border: 3px solid darkolivegreen;
+    scroll-snap-align: start;
+    width: fit-content;
+    height: 450px;
+    margin-right: 110px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background: cornsilk;
+    transform-origin: center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+  .slider > a {
+    display: inline-flex;
+    width: 5rem;
+    height: 4rem;
+    background: darkolivegreen;
+    color: cornsilk;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 2.5rem 0;
+    box-shadow: 1px cornsilk;
+    position:center;
+    font-family: monospace;
+  }
+
+  .slider > a:hover{
+    background-color: cornsilk;
+    color: darkolivegreen;
+}
+
+.slider > a:active{
+  background-color: black;
+}
+  
+  /* Don't need button navigation */
+  @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
+  }
+
+
+.typography-systems{
+  display: flex;
+}
+
+  .slider2 {
+    text-align: center;
+    align-items: center;
+  }
+
+  .slides {
+    align-items: center;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slide-image{
+    align-items: center;
+    height: 450px;
+    width: fit-content;
+  }
+
+  .slides > div {
+    display: inline-flex;
+    border: 3px solid darkolivegreen;
+    scroll-snap-align: start;
+    width: fit-content;
+    height: 450px;
+    margin-right: 110px;
+    margin-left: 50px;
+    border-radius: 10px;
+    background: cornsilk;
+    transform-origin: center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider2 > a {
+    display: inline-flex;
+    width: 5rem;
+    height: 4rem;
+    background: darkolivegreen;
+    color: cornsilk;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 2.5rem 0;
+    box-shadow: 1px cornsilk;
+    position:center;
+    font-family: monospace;
+  }
+
+  .slider2 > a:hover{
+    background-color: cornsilk;
+    color: darkolivegreen;
+}
+
+.slider2 > a:active{
+  background-color: black;
+}
+  
+  /* Don't need button navigation */
+  @supports (scroll-snap-type) {
+    .slider > a {
+      display: none;
+    }
+  }
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .flexgrow-container {
     display: flex;
 }
 
@@ -65,9 +231,9 @@ button {
     background-color: black;
     color: cornsilk;
     font-family: monospace;
-    font-size: 20px;
-    padding: 10px;
-    margin: 12px;
+    font-size: 23px;
+    padding: 5px;
+    margin: 11px;
     transition-duration: .4s;
 }
 
