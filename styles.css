@@ -33,7 +33,6 @@ p{
 
   .slides {
     align-items: center;
-    display: flex;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
@@ -51,9 +50,10 @@ p{
     scroll-snap-align: start;
     width: fit-content;
     height: 450px;
-    margin-right: 110px;
-    margin-left: 50px;
-    border-radius: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 20px;
+    margin-top: 50px;
     background: cornsilk;
     transform-origin: center;
     transform: scale(1);
@@ -94,42 +94,38 @@ p{
     }
   }
 
+  .poster-reflections{
+    display: flex;
+  }
+  
+  p{
+    font-family:monospace;
+    font-size: 15px;
+    text-align: center;
+    color: cornsilk;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+
     /* typography */
 .typography-systems{
   display: flex-wrap;
 }
 
-*::-webkit-scrollbar {
-  width: 0;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: transparent;
-  border: none;
-}
-
-* {
-  -ms-overflow-style: none;
-}
-
 .slides1 :target {
-  transform:  scale(1.1);
+  transform:  scale(1.2);
 }
 
 .slides1 {
   align-items: center;
-  display: flex;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
 }
 
 .slides1 > div {
-  display:flex;
+  display:inline-flex;
   border: 3px solid darkolivegreen;
   scroll-snap-align: start;
   width: fit-content;
@@ -190,21 +186,21 @@ p{
     }
   }
 
+  button1{
+    text-align: center;
+    display: flex;
+    border: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: cornsilk;
+    font-family: monospace;
+    font-size: 40px;
+    padding: 5px;
+    margin: 11px;
+    transition-duration: .4s;
+    align-items: center;
+  }
   
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
 
 
   .flexgrow-container {
