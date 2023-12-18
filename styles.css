@@ -97,6 +97,7 @@ p{
   .poster-reflections{
     display: flex;
   }
+
   
   p{
     font-family:monospace;
@@ -104,6 +105,14 @@ p{
     text-align: center;
     color: cornsilk;
     padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  h2{
+    color: darkolivegreen;
+    font-family:monospace;
+    font-size: 15px;
+    text-align: center;
     padding-bottom: 30px;
   }
 
@@ -187,21 +196,29 @@ p{
   }
 
   button1{
-    text-align: center;
+    justify-content: center;
     display: flex;
-    border: 10px;
+    border: 2px;
     border-radius: 5px;
     background-color: black;
     color: cornsilk;
     font-family: monospace;
-    font-size: 40px;
+    font-size: 30px;
     padding: 5px;
-    margin: 11px;
     transition-duration: .4s;
-    align-items: center;
   }
   
+  button1:hover{
+    color: darkolivegreen;
+}
 
+
+.flexboxphotos{
+  display: flex;
+  object-fit: contain;
+  align-items: center;
+  justify-content: center;
+}
 
   .flexgrow-container {
     display: flex;
